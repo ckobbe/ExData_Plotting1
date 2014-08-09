@@ -1,0 +1,9 @@
+## data.R
+## Author: ckobbe
+##
+
+# create a data dir, if missing:
+
+if (!file.exists("../data") {
+  dir.create("../data")
+}
