@@ -1,3 +1,11 @@
+### Notes for graders
+
+I laid out my project such that:
+* R code is in src/ and "expects" to be run from there: data.R handles this and is somewhat flexible about where execution starts
+* data is downloaded to data/ if it's missing, and data/ will be created if it is missing.
+* plots are stored in plots/, which will be created if it's missing.
+
+
 ## Introduction
 
 This assignment uses data from
