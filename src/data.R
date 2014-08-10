@@ -27,5 +27,8 @@ if (!file.exists("power_consumption_data.zip")) {
   unzip("power_consumption_data.zip")
 }
 
-# Return us to the original working directory
-setwd(wd)
+## FIXME: This works, but we should handle the case where the zip is present
+## but the data hasn't been unzipped for whatever reason
+
+# Return us to the src directory, where the plot scripts expect to work from
+setwd("../src")
